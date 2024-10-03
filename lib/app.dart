@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_solar_system/scenes/home_scene.dart';
+import 'package:flutter_solar_system/scenes/scenes_home.dart';
+import 'package:flutter_solar_system/widgets/solar_system_widget.dart';
 
 class App extends StatelessWidget {
   const App({
@@ -14,7 +15,7 @@ class App extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomeScene(),
+      home: const ScenesHome(),
     );
   }
 }

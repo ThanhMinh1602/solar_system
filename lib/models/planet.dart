@@ -72,32 +72,4 @@ class Planet {
         'earth: $earth, mars: $mars, jupiter: $jupiter, uranus: $uranus, '
         'neptune: $neptune, pluto: $pluto)';
   }
-
-  @override
-  bool operator ==(covariant Planet other) {
-    if (identical(this, other)) return true;
-
-    return other.mecury == mecury &&
-        other.saturn == saturn &&
-        other.venus == venus &&
-        other.earth == earth &&
-        other.mars == mars &&
-        other.jupiter == jupiter &&
-        other.uranus == uranus &&
-        other.neptune == neptune &&
-        other.pluto == pluto;
-  }
-
-  @override
-  int get hashCode {
-    return mecury.hashCode ^
-        saturn.hashCode ^
-        venus.hashCode ^
-        earth.hashCode ^
-        mars.hashCode ^
-        jupiter.hashCode ^
-        uranus.hashCode ^
-        neptune.hashCode ^
-        pluto.hashCode;
-  }
 }

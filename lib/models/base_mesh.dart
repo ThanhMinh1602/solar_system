@@ -1,16 +1,16 @@
 import 'dart:convert';
 
-import 'package:equatable/equatable.dart';
-import 'package:three_dart/three3d/three.dart';
+import 'package:three_dart/three3d/core/object_3d.dart';
+import 'package:three_dart/three3d/objects/mesh.dart';
 
-class BaseMesh extends Equatable {
-  const BaseMesh({
+class BaseMesh {
+  BaseMesh({
     required this.mesh,
     required this.object3d,
   });
 
-  final Mesh mesh;
-  final Object3D object3d;
+  Mesh mesh;
+  Object3D object3d;
 
   BaseMesh copyWith({
     Mesh? mesh,
@@ -35,9 +35,4 @@ class BaseMesh extends Equatable {
 
   Object3D rotateObject3D(double value) => object3d.rotateY(value);
 
-  @override
-  bool get stringify => true;
-
-  @override
-  List<Object> get props => [mesh, object3d];
 }

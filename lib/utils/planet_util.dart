@@ -1,11 +1,11 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
+import 'package:flutter_solar_system/gen/assets.gen.dart';
 import 'package:flutter_solar_system/models/base_mesh.dart';
 import 'package:flutter_solar_system/models/planet.dart';
 import 'package:flutter_solar_system/params/create_planet_params.dart';
 import 'package:flutter_solar_system/params/planet_ring_params.dart';
-import 'package:flutter_solar_system/res/assets/textures.dart';
 import 'package:three_dart/three_dart.dart' as three;
 
 const int _sphereSegments = 30;
@@ -25,7 +25,7 @@ class PlanetUtil {
       mecury: await _createPlanet(
         CreatePlanetParams(
           size: 3.2,
-          texture: textureMecury,
+          texture: Assets.textures.mercury.path,
           position: 28,
         ),
         scene,
@@ -33,7 +33,7 @@ class PlanetUtil {
       venus: await _createPlanet(
         CreatePlanetParams(
           size: 5.8,
-          texture: textureVenus,
+          texture: Assets.textures.venus.path,
           position: 44,
         ),
         scene,
@@ -41,12 +41,12 @@ class PlanetUtil {
       saturn: await _createPlanet(
         CreatePlanetParams(
           size: 10,
-          texture: textureSaturn,
+          texture: Assets.textures.saturn.path,
           position: 138,
-          planetRingParams: const PlanetRingParams(
+          planetRingParams: PlanetRingParams(
             innerRadius: 10,
             outerRadius: 20,
-            texture: textureSaturnRing,
+            texture: Assets.textures.saturnRing.path,
           ),
         ),
         scene,
@@ -54,7 +54,7 @@ class PlanetUtil {
       earth: await _createPlanet(
         CreatePlanetParams(
           size: 6,
-          texture: textureEarth,
+          texture: Assets.textures.earth.path,
           position: 62,
         ),
         scene,
@@ -62,7 +62,7 @@ class PlanetUtil {
       jupiter: await _createPlanet(
         CreatePlanetParams(
           size: 12,
-          texture: textureJupiter,
+          texture: Assets.textures.jupiter.path,
           position: 100,
         ),
         scene,
@@ -70,7 +70,7 @@ class PlanetUtil {
       mars: await _createPlanet(
         CreatePlanetParams(
           size: 4,
-          texture: textureMars,
+          texture: Assets.textures.mars.path,
           position: 78,
         ),
         scene,
@@ -78,12 +78,12 @@ class PlanetUtil {
       uranus: await _createPlanet(
         CreatePlanetParams(
           size: 7,
-          texture: textureUranus,
+          texture: Assets.textures.uranus.path,
           position: 176,
-          planetRingParams: const PlanetRingParams(
+          planetRingParams: PlanetRingParams(
             innerRadius: 7,
             outerRadius: 12,
-            texture: textureUranus,
+            texture: Assets.textures.uranusRing.path,
           ),
         ),
         scene,
@@ -91,7 +91,7 @@ class PlanetUtil {
       neptune: await _createPlanet(
         CreatePlanetParams(
           size: 7,
-          texture: textureNeptune,
+          texture: Assets.textures.neptune.path,
           position: 200,
         ),
         scene,
@@ -99,7 +99,7 @@ class PlanetUtil {
       pluto: await _createPlanet(
         CreatePlanetParams(
           size: 2.8,
-          texture: texturePluto,
+          texture: Assets.textures.mercury.path,
           position: 216,
         ),
         scene,
