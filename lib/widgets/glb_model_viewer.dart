@@ -8,9 +8,8 @@ class GlbViewWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ModelViewer(
-      src: Assets.model.blackhole,
+      src: 'https://modelviewer.dev/shared-assets/models/Astronaut.glb',
       alt: 'A 3D model of an astronaut',
-      ar: true,
       autoRotate: true,
       iosSrc: 'https://modelviewer.dev/shared-assets/models/Astronaut.usdz',
       disableZoom: true,
