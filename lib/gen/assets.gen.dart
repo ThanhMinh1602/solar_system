@@ -9,6 +9,26 @@
 
 import 'package:flutter/widgets.dart';
 
+class $AssetsJsonsGen {
+  const $AssetsJsonsGen();
+
+  /// File path: assets/jsons/rocket.json
+  String get rocket => 'assets/jsons/rocket.json';
+
+  /// List of all assets
+  List<String> get values => [rocket];
+}
+
+class $AssetsModelGen {
+  const $AssetsModelGen();
+
+  /// File path: assets/model/blackhole.glb
+  String get blackhole => 'assets/model/blackhole.glb';
+
+  /// List of all assets
+  List<String> get values => [blackhole];
+}
+
 class $AssetsTexturesGen {
   const $AssetsTexturesGen();
 
@@ -81,6 +101,8 @@ class $AssetsTexturesGen {
 class Assets {
   Assets._();
 
+  static const $AssetsJsonsGen jsons = $AssetsJsonsGen();
+  static const $AssetsModelGen model = $AssetsModelGen();
   static const $AssetsTexturesGen textures = $AssetsTexturesGen();
 }
 

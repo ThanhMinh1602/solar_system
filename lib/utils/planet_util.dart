@@ -22,7 +22,7 @@ class PlanetUtil {
   static PlanetUtil get instance => _instance;
   Future<Planet> initializePlanet(three.Scene scene) async {
     return Planet(
-      mecury: await _createPlanet(
+      mecury: await createPlanet(
         CreatePlanetParams(
           size: 3.2,
           texture: Assets.textures.mercury.path,
@@ -30,7 +30,7 @@ class PlanetUtil {
         ),
         scene,
       ),
-      venus: await _createPlanet(
+      venus: await createPlanet(
         CreatePlanetParams(
           size: 5.8,
           texture: Assets.textures.venus.path,
@@ -38,7 +38,7 @@ class PlanetUtil {
         ),
         scene,
       ),
-      saturn: await _createPlanet(
+      saturn: await createPlanet(
         CreatePlanetParams(
           size: 10,
           texture: Assets.textures.saturn.path,
@@ -51,7 +51,7 @@ class PlanetUtil {
         ),
         scene,
       ),
-      earth: await _createPlanet(
+      earth: await createPlanet(
         CreatePlanetParams(
           size: 6,
           texture: Assets.textures.earth.path,
@@ -59,7 +59,7 @@ class PlanetUtil {
         ),
         scene,
       ),
-      jupiter: await _createPlanet(
+      jupiter: await createPlanet(
         CreatePlanetParams(
           size: 12,
           texture: Assets.textures.jupiter.path,
@@ -67,7 +67,7 @@ class PlanetUtil {
         ),
         scene,
       ),
-      mars: await _createPlanet(
+      mars: await createPlanet(
         CreatePlanetParams(
           size: 4,
           texture: Assets.textures.mars.path,
@@ -75,7 +75,7 @@ class PlanetUtil {
         ),
         scene,
       ),
-      uranus: await _createPlanet(
+      uranus: await createPlanet(
         CreatePlanetParams(
           size: 7,
           texture: Assets.textures.uranus.path,
@@ -88,7 +88,7 @@ class PlanetUtil {
         ),
         scene,
       ),
-      neptune: await _createPlanet(
+      neptune: await createPlanet(
         CreatePlanetParams(
           size: 7,
           texture: Assets.textures.neptune.path,
@@ -96,7 +96,7 @@ class PlanetUtil {
         ),
         scene,
       ),
-      pluto: await _createPlanet(
+      pluto: await createPlanet(
         CreatePlanetParams(
           size: 2.8,
           texture: Assets.textures.mercury.path,
@@ -107,7 +107,7 @@ class PlanetUtil {
     );
   }
 
-  Future<BaseMesh> _createPlanet(
+  Future<BaseMesh> createPlanet(
     CreatePlanetParams createPlanetParams,
     three.Scene scene,
   ) async {

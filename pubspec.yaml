@@ -35,6 +35,9 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_gl: ^0.0.21
+  google_fonts: ^4.0.4
+  lottie: ^3.0.0
+  model_viewer_plus: ^1.9.0
   three_dart: ^0.0.16
   three_dart_jsm: ^0.0.10
   very_good_analysis: ^6.0.0
@@ -58,6 +61,9 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/textures/
+    - assets/jsons/
+    - assets/model/
+    - assets/model/blackhole.glb
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
   # For details regarding adding assets from package dependencies, see
