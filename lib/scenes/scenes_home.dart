@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_solar_system/gen/assets.gen.dart';
-import 'package:flutter_solar_system/widgets/glb_model_viewer.dart';
 import 'package:flutter_solar_system/widgets/solar_system_widget.dart';
 import 'package:lottie/lottie.dart';
 
@@ -94,7 +93,7 @@ class _ScenesHomeState extends State<ScenesHome>
           _buildSolarSystem(
               index: 2,
               isScaled: isScaled2,
-              right: screenWidth * 0.002,
+              right: screenWidth * 0.1,
               top: screenHeight * 0.6,
               child: const SolarSystemWidget()),
           _buildSolarSystem(
@@ -102,7 +101,7 @@ class _ScenesHomeState extends State<ScenesHome>
               isScaled: isScaled3,
               right: screenWidth * 0.6,
               top: screenHeight * 0.5,
-              child: const GlbViewWidget()),
+              child: const SolarSystemWidget()),
           _buildSpaceship(screenWidth, screenHeight),
           _buildViewDetail(screenHeight, screenWidth),
         ],
@@ -134,7 +133,6 @@ class _ScenesHomeState extends State<ScenesHome>
                 style: TextStyle(color: Colors.white, fontSize: 30.0),
               ),
               const SizedBox(height: 20),
-              // You can add more details about the planets here
               const Text(
                 'This is the detail view of the selected solar system.',
                 style: TextStyle(color: Colors.white),
@@ -184,14 +182,15 @@ class _ScenesHomeState extends State<ScenesHome>
     );
   }
 
+// tàu bay
   AnimatedBuilder _buildSpaceship(double screenWidth, double screenHeight) {
     return AnimatedBuilder(
       animation: _rocketAnimation,
       builder: (context, child) {
         double targetRight = screenWidth / 2.5 - (screenWidth * 0.45) / 2;
 
-        double rocketRight = screenWidth / 2 - screenHeight * 0.1;
-        double rocketBottom = 0;
+        double rocketRight = screenWidth / 3.5 - screenHeight * 0.1;
+        double rocketBottom = screenHeight * 0.15;
 
         return Positioned(
           right: rocketRight -

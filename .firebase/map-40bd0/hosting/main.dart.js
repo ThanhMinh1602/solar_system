@@ -20336,14 +20336,13 @@ _.d=d
 _.e=-1
 _.f=null},
 a77:function a77(a){this.a=a},
-vD:function vD(a,b,c,d,e,f,g){var _=this
+vD:function vD(a,b,c,d,e,f){var _=this
 _.c=a
 _.d=b
-_.x=c
-_.as=d
-_.cx=e
-_.db=f
-_.a=g},
+_.as=c
+_.cx=d
+_.db=e
+_.a=f},
 Gg:function Gg(a){var _=this
 _.d=!0
 _.e=a
@@ -24278,7 +24277,6 @@ s=s[2]
 p=b[2]
 return A.b([o*m+l*k+j*n,o*r+l*q+j*s,o*p[0]+l*p[1]+j*p[2]],t.n)},
 azN(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6,b7,b8,b9,c0,c1,c2,c3,c4,c5,c6,c7,c8,c9,d0,d1,d2,d3){var s,r,q=""+"<model-viewer"+(' src="'+B.ex.c9(c9)+'"')+(' alt="'+B.ex.c9(a)+'"')
-if(!0)q+=" ar"
 q+=' ios-src="'+B.ex.c9(b0)+'"'
 if(!0)q+=" camera-controls"
 if(!0)q+=" disable-zoom"
@@ -62398,7 +62396,7 @@ $0(){var s=this
 s.a.uz(0,s.b,s.d,s.c)},
 $S:20}
 A.ES.prototype={
-ac(a){return new A.vD("assets/model/blackhole.glb","A 3D model of an astronaut",!0,"https://modelviewer.dev/shared-assets/models/Astronaut.usdz",!0,!0,null)}}
+ac(a){return new A.vD("https://modelviewer.dev/shared-assets/models/Astronaut.glb","A 3D model of an astronaut","https://modelviewer.dev/shared-assets/models/Astronaut.usdz",!0,!0,null)}}
 A.xr.prototype={
 aG(){return new A.PW()}}
 A.PW.prototype={
@@ -66744,7 +66742,7 @@ if(B.d.cr(q.a.c,"file://")){A.rB().$1(u.e)
 A.a0(A.bY(u.e,null))}p=B.d.wr(l,'<script type="module" src="model-viewer.min.js" defer></script>',"")
 o=q.a
 n=o.c
-m=A.azN(o.d,null,null,!0,null,null,!0,null,B.Y,!0,null,null,!0,null,null,!0,null,null,null,p,null,null,null,null,null,null,o.as,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,n,null,null,null,null)
+m=A.azN(o.d,null,null,null,null,null,!0,null,B.Y,!0,null,null,!0,null,null,!0,null,null,null,p,null,null,null,null,null,null,o.as,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,n,null,null,null,null)
 $.afs()
 $.rH().r9("model-viewer-html-"+q.e,new A.a2l(m),!0)
 q.bn(new A.a2m(q))
